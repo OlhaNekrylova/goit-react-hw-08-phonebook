@@ -12,7 +12,7 @@ function App() {
             <BrowserRouter basename="/goit-react-hw-08-phonebook">
                     <Navbar />
                     <UserRoutes />
-                </BrowserRouter>
+            </BrowserRouter>
         </Provider>
     );
 };
