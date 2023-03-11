@@ -1,26 +1,21 @@
 import { nanoid } from "nanoid";
 
-const contacts = [
+const links = [
     {
         id: nanoid(),
-        name: 'Rosie Simpson', 
-        number: '459-12-56',
+        text: "Home page",
+        link: "/"
     },
-    {
-        id: nanoid(), 
-        name: 'Hermione Kline', 
-        number: '443-89-12',
-},
-    {
+        {
         id: nanoid(),
-        name: 'Eden Clements',
-        number: '645-17-79',
+        text: "Search Page",
+        link: "/search"
     },
-    {
+        {
         id: nanoid(),
-        name: 'Annie Copeland',
-        number: '227-91-26',
+        text: "Contacts page",
+        link: "/contacts"
     },
-]
+];
 
-export default contacts;
+export default links;
