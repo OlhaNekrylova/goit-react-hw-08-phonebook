@@ -3,7 +3,7 @@ import { Provider } from "react-redux";
 import { PersistGate } from 'redux-persist/integration/react';
 
 import AuthLayout from './modules/AuthLayout/AuthLayout';
-import Navigation from './modules/Navigation/Navigation';
+import Navbar from './modules/Navigation/Navbar/Navbar';
 import UserRoutes from './UserRoutes';
 
 import { store, persistor } from "./redux/store";
@@ -14,7 +14,7 @@ function App() {
             <PersistGate loading={null} persistor={persistor}>
                 <AuthLayout>
                     <BrowserRouter basename="/goit-react-hw-08-phonebook">
-                        <Navigation />
+                        <Navbar />
                         <UserRoutes />
                     </BrowserRouter>
                 </AuthLayout>

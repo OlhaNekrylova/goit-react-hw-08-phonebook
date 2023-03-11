@@ -1,9 +1,7 @@
-import MyContacts from "../../modules/MyContacts/MyContacts";
-
 const HomePage = ()=> {
     return (
         <>
-            <MyContacts />
+            <h1>Home page</h1>
         </>
     )
 }

@@ -1,21 +1,18 @@
 import { nanoid } from "nanoid";
 
-const links = [
+const items = [
     {
         id: nanoid(),
         text: "Home page",
-        link: "/"
+        link: "/",
+        private: false,
     },
-        {
-        id: nanoid(),
-        text: "Search Page",
-        link: "/search"
-    },
-        {
+    {
         id: nanoid(),
         text: "Contacts page",
-        link: "/contacts"
+        link: "/contacts",
+        private: true,
     },
 ];
 
-export default links;
+export default items;
