@@ -4,7 +4,6 @@ import React, { useEffect } from 'react';
 import { fetchAllContacts, fetchDeleteContact } from "../../redux/contacts/contacts-operations";
 import { getFilteredContacts } from "../../redux/selectors";
 
-
 import styles from './ContactList.module.css';
 
 const ContactList = () => {
@@ -43,12 +42,6 @@ const ContactList = () => {
 
 ContactList.defaultProps = {
     items: []
-}
-
-ContactList.propTypes = {
-    id: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    number: PropTypes.string.isRequired,
 }
 
 export default ContactList;
