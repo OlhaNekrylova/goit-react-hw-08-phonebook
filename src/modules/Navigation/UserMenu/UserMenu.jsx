@@ -6,7 +6,7 @@ import { getUser } from "../../../redux/auth/auth-selectors";
 
 // import styles from "./UserMenu.module.css";
 
-const NavbarUser = () => {
+const UserMenu = () => {
     const {email} = useSelector(getUser);
     const dispatch = useDispatch();
 
@@ -21,4 +21,4 @@ const NavbarUser = () => {
     )
 }
 
-export default NavbarUser;
+export default UserMenu;

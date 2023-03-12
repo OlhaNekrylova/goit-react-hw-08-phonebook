@@ -6,6 +6,7 @@ import useForm from "../../shared/hooks/useForm";
 import fields from "./fields";
 import initialState from "./initialState";
 
+import PropTypes from 'prop-types';
 import styles from "./RegisterForm.module.css";
 
 const RegisterForm = ({onSubmit}) => {
@@ -21,5 +22,10 @@ const RegisterForm = ({onSubmit}) => {
         </form>
     )
 }
+
+RegisterForm.propTypes = {
+    onSubmit: PropTypes.func.isRequired,
+};
+
 
 export default RegisterForm;

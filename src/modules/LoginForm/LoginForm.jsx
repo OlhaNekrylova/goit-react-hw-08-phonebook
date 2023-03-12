@@ -6,6 +6,7 @@ import useForm from "../../shared/hooks/useForm";
 import fields from "./fields";
 import initialState from "./initialState";
 
+import PropTypes from 'prop-types';
 import styles from "./LoginForm.module.css";
 
 const LoginForm = ({onSubmit}) => {
@@ -20,5 +21,9 @@ const LoginForm = ({onSubmit}) => {
         </form>
     )
 }
+
+LoginForm.propTypes = {
+    onSubmit: PropTypes.func.isRequired,
+};
 
 export default LoginForm;
