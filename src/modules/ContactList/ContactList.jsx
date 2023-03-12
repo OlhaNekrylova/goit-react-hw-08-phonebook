@@ -45,4 +45,10 @@ ContactList.defaultProps = {
     items: []
 }
 
+ContactList.propTypes = {
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    number: PropTypes.string.isRequired,
+}
+
 export default ContactList;
