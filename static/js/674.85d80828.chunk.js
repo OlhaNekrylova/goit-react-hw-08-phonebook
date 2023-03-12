@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoit_react_hw_08_phonebook=self.webpackChunkgoit_react_hw_08_phonebook||[]).push([[674],{674:function(e,n,o){o.r(n),o.d(n,{default:function(){return r}});var t="HomePage_visuallyHidden__JA8p6",a=o(184),r=function(){return(0,a.jsx)(a.Fragment,{children:(0,a.jsx)("h1",{className:t,children:"Home page"})})}}}]);
+//# sourceMappingURL=674.85d80828.chunk.js.map
