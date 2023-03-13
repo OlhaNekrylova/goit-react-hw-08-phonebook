@@ -1,7 +1,9 @@
 import { useState, useCallback } from "react";
+// import { useNavigate } from 'react-router-dom';
 
 const useForm = ({initialState, onSubmit})=> {
     const [state, setState] = useState({...initialState})
+    // const navigate = useNavigate();
 
     const handleChange = useCallback(({target}) => {
         const {name, value} = target;
@@ -12,8 +14,12 @@ const useForm = ({initialState, onSubmit})=> {
 
     const handleSubmit = e => {
         e.preventDefault();
+        if (state.user.trim() === '') {
+            return toast.info('Please, specify your search query.');
+        }
         onSubmit({...state});
-        setState({...initialState});
+        // setState({...initialState});
+        // navigate('/contacts');
     };
 
     return {state, setState, handleChange, handleSubmit}
